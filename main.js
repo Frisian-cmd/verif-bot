@@ -34,7 +34,7 @@ client.on('message', message =>{
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
-}	else if(command == 'member'){
+	if(command == 'member'){
 	client.commands.get('member').execute(message, args); 
 
 }
