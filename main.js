@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 
+const botConfig = require("*./botconfig.json");
+
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 
 const fs = require('fs');
